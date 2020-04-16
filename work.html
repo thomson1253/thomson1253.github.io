@@ -120,7 +120,7 @@
 
 
 /* Caption of Modal Image */
-#caption {
+#caption1 {
   margin: auto;
   display: block;
   width: 80%;
@@ -132,7 +132,7 @@
 }
 
 /* Add Animation */
-.modal-content, #caption {  
+.modal-content, #caption1 {  
   -webkit-animation-name: zoom;
   -webkit-animation-duration: 0.6s;
   animation-name: zoom;
@@ -140,13 +140,93 @@
 }
 
 /* Add Animation */
-.modalrow-content, #caption {  
+.modalrow-content, #caption1 {  
   -webkit-animation-name: zoom;
   -webkit-animation-duration: 0.6s;
   animation-name: zoom;
   animation-duration: 0.6s;
 }
 
+#caption2 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption2 {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+/* Add Animation */
+.modalrow-content, #caption2 {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+#caption3 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption3 {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+/* Add Animation */
+.modalrow-content, #caption3 {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+#caption4 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption4 {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+/* Add Animation */
+.modalrow-content, #caption4 {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
 @-webkit-keyframes zoom {
   from {-webkit-transform:scale(0)} 
   to {-webkit-transform:scale(1)}
@@ -159,7 +239,7 @@
 
 /* The Close Button */
 .close {
-  position: absolute;
+  position: static;
   top: 15px;
   right: 35px;
   color: #f1f1f1;
@@ -177,7 +257,7 @@
 
 /* The 2 Close Button */
 .close2 {
-  position: absolute;
+  position: static;
   top: 15px;
   right: 35px;
   color: #f1f1f1;
@@ -195,7 +275,7 @@
 
 /* The 3 Close Button */
 .close3 {
-  position: absolute;
+  position: static;
   top: 15px;
   right: 35px;
   color: #f1f1f1;
@@ -213,7 +293,7 @@
 
 /* The 4 Close Button */
 .close4 {
-  position: absolute;
+  position: static;
   top: 15px;
   right: 35px;
   color: #f1f1f1;
@@ -298,11 +378,13 @@ padding-right:  %;
 div.imgs {
 padding-left: 18%;
 padding-right:  ;
-  padding-top: 8%;
+  padding-top: 3%;
   padding-bottom: 8%;
 }
 }
-
+div#myModal4.modalrow {
+  padding-top: 10%;
+}
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 600px){
   .modal-content {
@@ -343,17 +425,34 @@ padding-right:  ;
 
 <body>
 
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="index.html">Welcome</a>
-  <a href="about.html">About</a>
-  <a href="work.html">Work</a>
-  <a href="contact.html">Contact</a>
-</div>
+  <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="about.html">Design Portfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home
+              </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="work.html">Work</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
-
-<nav aria-label="...">
+<nav style="padding-top:15%"; aria-label="...">
   <ul class="pagination justify-content-center">
     <!--<li class="page-item disabled">
       <a class="page-link" href="#" tabindex="-1">1</a>
@@ -381,26 +480,26 @@ padding-right:  ;
 <div id="myModal" class="modal">
   <span class="close">&times;</span>
   <img class="modal-content" id="img01">
-  <div id="caption">hello</div>
+  <div id="caption1">A Cottonelle advertisment created in September 2019.</div>
 </div>
 
   <div id="myModal2" class="modal">
   <span class="close2">&times;</span>
     <img class="modal-content" id="img02">
-    <div id="caption">hello</div>
+    <div id="caption2">A Cottonelle advertisment created in September 2019.</div>
   </div>  
   
    <div id="myModal3" class="modalrow">
   <span class="close3">&times;</span>
     <img class="modal-content" id="img03">
-    <div id="caption">hello</div>
+    <div id="caption3">A Cottonelle advertisment created in September 2019.</div>
   </div>  
 
-   <div id="myModal4" class="modalrow">
+  <div id="myModal4" class="modalrow">
   <span class="close4">&times;</span>
     <img class="modal-content" id="img04">
-    <div id="caption">hello</div>
-  </div>  
+    <div id="caption4">A advertisment created in March 2020.</div>
+  </div>   
 <script>
 // Get the modal
 var modal = document.getElementById("myModal");
@@ -496,11 +595,23 @@ span.onclick = function() {
 
 
 
-  <script type="text/javascript" src="js/main.js"></script>
+  
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!-- Footer -->
+<footer class="page-footer font-small blue">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright Molly-Colleen Thomson
+    
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
   </body>
 </html>
